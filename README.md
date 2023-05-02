@@ -28,7 +28,7 @@ pip install jfio
 ### Build from source
 
 ```bash
-git clone https://github.com/yourusername/jfio.git
+git clone git@github.com:PabloIbannez/JFIO.git
 cd jfio
 python setup.py install
 ```
