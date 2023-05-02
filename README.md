@@ -22,15 +22,15 @@ JFIO is a high-performance Python package for reading and writing JSON files, po
 ### Install using pip
 
 ```bash
-pip install jfio
+pip install JFIO
 ```
 
 ### Build from source
 
 ```bash
 git clone git@github.com:PabloIbannez/JFIO.git
-cd jfio
-python setup.py install
+cd JFIO
+python setup.py install (or pip install .)
 ```
 
 ## Usage
@@ -56,16 +56,17 @@ print(data_read)
 
 ## API Reference
 
-### `jfio.write(filename: str, data: Any) -> None`
+### `jfio.write(filename: str, data, formatted: bool = False)`
 
 Write JSON data to a file.
 
 **Arguments:**
 
 - `filename` (str): The name of the file to write to.
-- `data` (Any): The data to write. This can be any data type that is serializable to JSON.
+- `data`: The data to write. This can be any data type that is serializable to JSON.
+- `formatted` (bool): Write JSON file in a human-readable format. Default: `False`.
 
-### `jfio.read(filename: str) -> Any`
+### `jfio.read(filename: str)`
 
 Read JSON data from a file.
 
@@ -89,3 +90,4 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 - [nlohmann/json](https://github.com/nlohmann/json) for providing the powerful C++ JSON library
 - [pybind11](https://github.com/pybind/pybind11) for enabling seamless Python-C++ bindings
+- [pybind11_json](https://github.com/pybind/pybind11_json) for simplifying the integration of nlhomann/json with pybind11

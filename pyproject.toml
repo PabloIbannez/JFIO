@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools-cuda-cpp", "setuptools", "pybind11"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="JFIO"
+version="1.0.0"
+authors = [
+    {name = "Pablo Ibáñez-Freire", email = "p.ibanez.fre@gmail.com"},
+]
+description = "JFIO (Json Fast Input Output) is a high-performance Python package for efficient reading and writing of JSON files."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT License"}
+
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+]
+
+dependencies = []
+
+[options]
+include_package_data = true
+
