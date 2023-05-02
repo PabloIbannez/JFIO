@@ -30,7 +30,13 @@ pip install JFIO
 ```bash
 git clone git@github.com:PabloIbannez/JFIO.git
 cd JFIO
-python setup.py install (or pip install .)
+python setup.py install 
+```
+alternatively:
+```bash
+git clone git@github.com:PabloIbannez/JFIO.git
+cd JFIO
+pip install .
 ```
 
 ## Usage
