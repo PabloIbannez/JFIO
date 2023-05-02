@@ -1,4 +1,5 @@
 include JFIO/write/write.cpp
+include JFIO/read/read.cpp
 include JFIO/ThirdParty/pybind11_json.hpp
 include JFIO/ThirdParty/json.hpp
 
