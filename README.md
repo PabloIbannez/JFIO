@@ -44,7 +44,7 @@ pip install .
 Here is a basic example of how to use JFIO for reading and writing JSON files:
 
 ```python
-import jfio
+import JFIO
 
 # Writing a JSON file
 data = {
@@ -53,16 +53,16 @@ data = {
     "city": "New York"
 }
 
-jfio.write("output.json", data)
+JFIO.write("output.json", data, formatted=True)
 
 # Reading a JSON file
-data_read = jfio.read("output.json")
+data_read = JFIO.read("output.json")
 print(data_read)
 ```
 
 ## API Reference
 
-### `jfio.write(filename: str, data, formatted: bool = False)`
+### `JFIO.write(filename: str, data, formatted: bool = False)`
 
 Write JSON data to a file.
 
@@ -72,7 +72,7 @@ Write JSON data to a file.
 - `data`: The data to write. This can be any data type that is serializable to JSON.
 - `formatted` (bool): Write JSON file in a human-readable format. Default: `False`.
 
-### `jfio.read(filename: str)`
+### `JFIO.read(filename: str)`
 
 Read JSON data from a file.
 
