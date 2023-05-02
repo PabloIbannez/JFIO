@@ -32,7 +32,7 @@ git clone git@github.com:PabloIbannez/JFIO.git
 cd JFIO
 python setup.py install 
 ```
-alternatively:
+Alternatively:
 ```bash
 git clone git@github.com:PabloIbannez/JFIO.git
 cd JFIO
