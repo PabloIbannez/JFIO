@@ -52,7 +52,7 @@ void writeJSON2File(std::string filename,const nlohmann::json& data,bool formatt
       }
 
       if (c == ']' and nextC == '}'){
-        out << '\n' << currentIndent << c ;
+        out << c ;
         written = true;
       }
 
